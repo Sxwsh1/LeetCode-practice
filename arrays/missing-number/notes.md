@@ -1,1 +1,1 @@
-Look for mathematical properties of the input that can replace extra processing.
+- Look for mathematical properties of the input that can replace extra processing.
