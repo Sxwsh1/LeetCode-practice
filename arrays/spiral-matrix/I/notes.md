@@ -1,0 +1,5 @@
+The solution I posted is quite lengthy, with many `if` statements, `for` loops, and an additional `unordered_set` to track visited cells. I won't go into the details of how to improve it, but here are my main takeaways from this problem after looking at other solutions:
+
+- When a solution involves many `if` statements handling similar cases, look for a way to represent their differences as data instead of separate branches. For grid movements, two arrays of row and column offsets can replace four directional cases.
+
+- In traversal problems, before storing every visited element in a set, consider whether the visited or remaining region follows a predictable structure that can be described using a few variables. Here for example, four shrinking boundaries can reduce auxiliary space from O(nm) to O(1). This isn't always possible.
